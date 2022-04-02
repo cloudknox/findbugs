@@ -4,7 +4,7 @@
     <groupId>org.sonatype.oss</groupId>
     <artifactId>oss-parent</artifactId>
     <version>7</version>
-    <relativePath />
+    <relativePath/>
   </parent>
 
   <groupId>com.google.code.findbugs</groupId>
@@ -60,7 +60,7 @@
     <developer>
       <id>bp</id>
       <name>Keith Lea</name>
-      <email />
+      <email/>
       <url>http://keithlea.com/</url>
       <roles>
         <role>web cloud</role>
@@ -89,26 +89,26 @@
     </contributor>
     <contributor>
       <name>Nay Ayewah</name>
-      <email />
-      <url />
+      <email/>
+      <url/>
       <roles>
-        <role />
+        <role/>
       </roles>
       <timezone>-5</timezone>
     </contributor>
     <contributor>
       <name>Ben Langmead</name>
-      <email />
-      <url />
+      <email/>
+      <url/>
       <roles>
-        <role />
+        <role/>
       </roles>
       <timezone>-5</timezone>
     </contributor>
     <contributor>
       <name>Tomas Pollak</name>
-      <email />
-      <url />
+      <email/>
+      <url/>
       <roles>
         <role>Eclipse plugin tests</role>
       </roles>
@@ -116,17 +116,17 @@
     </contributor>
     <contributor>
       <name>Phil Crosby</name>
-      <email />
-      <url />
+      <email/>
+      <url/>
       <roles>
-        <role />
+        <role/>
       </roles>
       <timezone>-5</timezone>
     </contributor>
     <contributor>
       <name>Peter Friese</name>
-      <email />
-      <url />
+      <email/>
+      <url/>
       <roles>
         <role>Eclipse plugin</role>
       </roles>
@@ -134,37 +134,37 @@
     </contributor>
     <contributor>
       <name>Dave Brosius</name>
-      <email />
-      <url />
+      <email/>
+      <url/>
       <roles>
-        <role />
+        <role/>
       </roles>
       <timezone>-5</timezone>
     </contributor>
     <contributor>
       <name>Brian Goetz</name>
-      <email />
-      <url />
+      <email/>
+      <url/>
       <roles>
-        <role />
+        <role/>
       </roles>
       <timezone>-5</timezone>
     </contributor>
     <contributor>
       <name>Rohan Lloyd</name>
-      <email />
-      <url />
+      <email/>
+      <url/>
       <roles>
-        <role />
+        <role/>
       </roles>
       <timezone>-5</timezone>
     </contributor>
     <contributor>
       <name>Tagir Valeev</name>
       <email>lany@ngs.ru</email>
-      <url />
+      <url/>
       <roles>
-        <role />
+        <role/>
       </roles>
       <timezone>+6</timezone>
     </contributor>
@@ -189,7 +189,7 @@
     <dependency>
       <groupId>org.apache.bcel</groupId>
       <artifactId>bcel</artifactId>
-      <version>6.0</version>
+      <version>6.5.0</version>
     </dependency>
     <dependency>
       <groupId>com.google.code.findbugs</groupId>
