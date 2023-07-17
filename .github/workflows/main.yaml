@@ -1,0 +1,30 @@
+env:
+  AZ_DEVOPS_TOKEN: ${{ secrets.AZURE_DEVOPS_TOKEN }}
+
+name: ciem-validate-pr-title
+on:
+  pull_request:
+    types: [opened, edited]
+jobs:
+  validation-of-PR:
+    name: validate-pr
+    runs-on: ubuntu-latest
+    steps:
+      - name: validation of pr title
+        run: |
+          pr_title="${{ github.event.pull_request.title }}"
+          pr_validation=$(echo  $pr_title  | cut -d ":" -f1 | tr -d " ")
+          ado_item=$(echo  $pr_validation  | cut -d "-" -f2)
+          echo "$AZ_DEVOPS_TOKEN" | az devops login --organization https://dev.azure.com/IdentityDivision/
+          IS_VALID=$(az boards work-item show --id  $ado_item  | jq -r '.fields."System.Title"')
+          if [[  $IS_VALID  != "" ]]; then
+              if [[  $pr_validation  == "AB-$ado_item" ]]; then
+                  echo "Valid PR Title"
+              else
+                  echo "Naming convernsion of PR Title is invalid..."
+                  exit 1
+              fi
+          else
+              echo "Invalid ADO item"
+              exit 1
+          fi
